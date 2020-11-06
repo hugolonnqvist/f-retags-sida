@@ -30,7 +30,7 @@ nav>ul>li {
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     list-style: none;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 nav>ul>li>a {
@@ -43,17 +43,21 @@ nav>ul>li>a:hover {
     color: #29494A;
 }
 
-.container {
+.centerCont {
     display: grid;
     justify-content: center;
 }
 
 .slideshow {
     display: flex;
+    justify-content: center;
     position: relative;
+    width: 60vw;
     height: 30vw;
     margin-top: 2vw;
     margin-bottom: 3vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     border: 2px solid;
 }
 
@@ -64,7 +68,7 @@ nav>ul>li>a:hover {
 
 .gridContainer {
     display: grid;
-    grid-template-columns: 20px 1fr 40px 1fr 40px 1fr 20px;
+    grid-template-columns: 22vw 18vw 1fr 18vw 1fr 18vw 22vw;
     grid-template-rows: 8vh 1fr;
 }
 
@@ -87,7 +91,6 @@ nav>ul>li>a:hover {
     grid-column-start: 2;
     grid-row-start: 2;
 }
-
 .item2 {
     grid-column-start: 4;
     grid-row-start: 2;
@@ -103,16 +106,21 @@ nav>ul>li>a:hover {
     grid-row-start: 2;
 }
 
+.item1, .item2, .item3, .item4 {
+    background-color: #f3f2f2;
+    border: 8px solid  #f3f2f2;
+}
+
 #popularShoe1, #popularShoe2, #popularShoe3 {
-    width: 240px;
-    height: 240px;
-    border: 2px solid;
+    width: 17vw;
+    height: 14vw;
 }
 
 .gridContainer2 {
     display: grid;
-    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
-    grid-template-rows: 8vh 1fr;
+    grid-template-columns: 22vw 13vw 1fr 13vw 1fr 13vw 1fr 13vw 22vw;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
 }
 
 .thirdTitle {
@@ -123,6 +131,13 @@ nav>ul>li>a:hover {
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 9;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.oxfords1, .oxfords2, .oxfords3, .oxfords4 {
+    width: 12vw;
+    height: 10vw;
 }
 
 footer {
