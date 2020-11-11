@@ -1,3 +1,9 @@
+:root {
+    --navText: 1.7rem; 
+    --mediumText: 1.5rem;
+    --smallText: 1.1rem;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -30,7 +36,7 @@ nav>ul>li {
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     list-style: none;
-    font-size: 24px;
+    font-size: var(--navText);
 }
 
 nav>ul>li>a {
@@ -84,6 +90,7 @@ nav>ul>li>a:hover {
 
 .titleText {
     font-size: 24px;
+    font-weight: bold;
     margin: 0px;
 }
 
@@ -138,6 +145,36 @@ nav>ul>li>a:hover {
 .oxfords1, .oxfords2, .oxfords3, .oxfords4 {
     width: 12vw;
     height: 10vw;
+}
+
+.omOssGrid1 {
+    display: grid;
+    grid-template-columns: 10vw 25vw 10vw 50vw 5vw;
+    margin-top: 4vh;
+}
+
+.omOssGrid1 > div {
+    grid-column-start: 2;
+   
+}
+
+.boldText {
+    font-weight: bold;
+    font-size: var(--mediumText);
+    margin: 0vw;
+}
+
+.smallText {
+    font-size: var(--smallText);
+    margin: 10px;
+}
+
+.imgMap1 {
+    width: 50vw;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    border: 2px solid;
+    border-radius: 50px;
 }
 
 footer {
