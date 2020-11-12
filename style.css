@@ -150,12 +150,37 @@ nav>ul>li>a:hover {
 .omOssGrid1 {
     display: grid;
     grid-template-columns: 10vw 25vw 10vw 50vw 5vw;
-    margin-top: 4vh;
+    margin-top: 5vh;
 }
 
 .omOssGrid1 > div {
+    grid-column-start: 2;  
+}
+
+.imgMap1 {
+    width: 50vw;
+    height: 25vw;
+    grid-column-start: 4;
+    border: 2px solid;
+    border-radius: 50px;
+}
+
+.omOssGrid2 {
+    display: grid;
+    grid-template-columns: 5vw 50vw 10vw 25vw 10vw;
+    margin-top: 12vh;
+}
+
+.omOssGrid2 > div {
+    grid-column-start: 4;
+}
+
+.imgMap2 {
+    width: 50vw;
+    height: 25vw;
     grid-column-start: 2;
-   
+    border: 2px solid;
+    border-radius: 50px;
 }
 
 .boldText {
@@ -167,14 +192,6 @@ nav>ul>li>a:hover {
 .smallText {
     font-size: var(--smallText);
     margin: 10px;
-}
-
-.imgMap1 {
-    width: 50vw;
-    grid-column-start: 4;
-    grid-row-start: 1;
-    border: 2px solid;
-    border-radius: 50px;
 }
 
 footer {
