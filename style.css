@@ -27,7 +27,7 @@ nav>ul {
     flex-direction: row;
     align-items: center;
     margin-right: 2vw;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 20px;
     background-color: #6FCF97;
 }
@@ -82,15 +82,17 @@ nav>ul>li>a:hover {
     border: 2px solid;
     border-radius: 12px;
     background-color: #6FCF97;
-    height: 6vh;
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 7;
 }
 
+.secondTitle > p {
+    margin: 12px;
+}
+
 .titleText {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: var(--navText);
     margin: 0px;
 }
 
@@ -134,7 +136,6 @@ nav>ul>li>a:hover {
     border: 2px solid;
     border-radius: 12px;
     background-color: #6FCF97;
-    height: 6vh;
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 9;
@@ -142,18 +143,22 @@ nav>ul>li>a:hover {
     margin-bottom: 2vh;
 }
 
+.thirdTitle > p {
+    margin: 12px;
+}
+
 .oxfords1, .oxfords2, .oxfords3, .oxfords4 {
     width: 12vw;
     height: 10vw;
 }
 
-.omOssGrid1 {
+.butikerGrid1 {
     display: grid;
     grid-template-columns: 10vw 25vw 10vw 50vw 5vw;
     margin-top: 5vh;
 }
 
-.omOssGrid1 > div {
+.butikerGrid1 > div {
     grid-column-start: 2;  
 }
 
@@ -165,13 +170,13 @@ nav>ul>li>a:hover {
     border-radius: 50px;
 }
 
-.omOssGrid2 {
+.butikerGrid2 {
     display: grid;
     grid-template-columns: 5vw 50vw 10vw 25vw 10vw;
     margin-top: 12vh;
 }
 
-.omOssGrid2 > div {
+.butikerGrid2 > div {
     grid-column-start: 4;
 }
 
@@ -194,10 +199,100 @@ nav>ul>li>a:hover {
     margin: 10px;
 }
 
-footer {
-    margin-top: 40vh;
+/* om_oss.html*/
+
+.omOssGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20vw 60vw 20vw;
+}
+
+.omOssTitle {
+    border: 2px solid;
+    border-radius: 12px;
     background-color: #6FCF97;
     text-align: center;
-    font-size: 18px;
-    height: 10ch;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    grid-column-start: 2;
+}
+
+.omOssTitle > p {
+    margin: 12px;
+}
+
+.omOssText {
+    text-align: justify;
+    grid-column-start: 2;
+}
+
+.opinionGrid {
+    display: grid;
+    grid-template-columns: 10vw 16vw 1fr 16vw 1fr 16vw 1fr 16vw 10vw;
+    grid-template-rows: auto 1fr;
+}
+
+.opinionTitle {
+    
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.opinionTitle > p {
+    margin: 12px;
+}
+
+.opinion1, .opinion2, .opinion3, .opinion4 {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    border: 2px dotted;
+    border-radius: 40px;
+    height: 37vh;
+}
+
+.opinion1 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+} 
+
+.opinion2 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+} 
+
+.opinion3 {
+    grid-column-start: 6;
+    grid-row-start: 2;
+} 
+
+.opinion4 {
+    grid-column-start: 8;
+    grid-row-start: 2;
+}
+
+.opinionUser {
+    font-weight: bold;
+    font-size: var(--mediumText);
+    margin: 12px;
+}
+
+.opinionText {
+    margin: 12px;
+}
+
+.opinionImg {
+    width: 16vw;
+}
+
+footer {
+    margin-top: 10vh;
+    background-color: #6FCF97;
+    text-align: center;
+    font-size: var(--smallText);
+    height: 20vh;
 }
