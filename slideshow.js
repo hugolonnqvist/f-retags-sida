@@ -1,4 +1,4 @@
-index = 0;
+/*index = 0;
 
 slideshow()
 
@@ -20,3 +20,4 @@ function slideshow () {
     dots[index-1].className += " active";
     setTimeout(slideshow, 3000) 
 }
+*/

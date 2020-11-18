@@ -74,27 +74,39 @@ nav>ul>li>a:hover {
 
 .slideshow {
     position: relative;
+    overflow: hidden;
+    height: 40vh;
+    width: 56vw;
 }
 
 .slide {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
-    animation-name: fade;
-    animation-duration: 2s;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    animation: 10s autoplay infinite ease-in-out;
 }
 
-@keyframes fade {
-    from {
-        opacity: .4;
-    }
-    to {
-        opacity: 1;
-    }
+@keyframes autoplay {
+    0% {right: 0%}
+    30% {left: 0%}
+    70% {left: 0%}
+    100% {left: -100%}
+}
+
+.slide > *:nth-child(1) {
+    margin: 12px;
+    animation-delay: 0s;
+}
+
+.slide > *:nth-child(2) {
+    margin: 12px;
+    animation-delay: 5s;
 }
 
 .gridContainer {
     display: grid;
-    grid-template-columns: 22vw 18vw 1fr 18vw 1fr 18vw 22vw;
+    grid-template-columns: 18vw 1fr 18vw 1fr 18vw;
     grid-template-rows: 8vh 1fr;
 }
 
@@ -105,6 +117,7 @@ nav>ul>li>a:hover {
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 7;
+    margin-bottom: 0xpx;
 }
 
 .secondTitle > p {
@@ -114,6 +127,28 @@ nav>ul>li>a:hover {
 .titleText {
     font-size: var(--navText);
     margin: 0px;
+}
+
+.popShoe1, .popShoe2, .popShoe3 {
+    width: 17vw;
+    height: 14vw;
+    background-color: #f3f2f2;
+    border: 8px solid  #f3f2f2;
+}
+
+.popShoe1 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.popShoe2 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.popShoe3 {
+    grid-column-start: 5;
+    grid-row-start: 2;
 }
 
 .item1 {
@@ -138,11 +173,6 @@ nav>ul>li>a:hover {
 .item1, .item2, .item3, .item4 {
     background-color: #f3f2f2;
     border: 8px solid  #f3f2f2;
-}
-
-#popularShoe1, #popularShoe2, #popularShoe3, #popularShoe4, #popularShoe5, #popularShoe6 {
-    width: 17vw;
-    height: 14vw;
 }
 
 .gridContainer2 {
@@ -172,6 +202,13 @@ nav>ul>li>a:hover {
     height: 10vw;
 }
 
+/*nyheter.html*/
+
+
+
+/*skor.html*/
+
+/*butiker.html*/
 .butikerGrid1 {
     display: grid;
     grid-template-columns: 10vw 25vw 10vw 50vw 5vw;
@@ -220,7 +257,6 @@ nav>ul>li>a:hover {
 }
 
 /* om_oss.html*/
-
 .omOssGrid {
     display: grid;
     justify-content: center;
