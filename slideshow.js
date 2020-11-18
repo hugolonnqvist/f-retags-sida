@@ -1,9 +1,9 @@
-/*index = 0;
+index = 0;
 
 slideshow()
 
 function slideshow () {
-    let slides = document.getElementsByClassName("slide");
+    let slides = document.getElementsByClassName("slideCont");
     let dots = document.getElementsByClassName("dot")
 
     for (let i = 0; i < slides.length; i++) {
@@ -18,6 +18,5 @@ function slideshow () {
     }
     slides[index-1].style.display = "block";
     dots[index-1].className += " active";
-    setTimeout(slideshow, 3000) 
+    setTimeout(slideshow, 3500) 
 }
-*/
