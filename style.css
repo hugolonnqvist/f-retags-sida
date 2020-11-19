@@ -1,7 +1,24 @@
 :root {
-    --navText: 1.7rem; 
-    --mediumText: 1.5rem;
-    --smallText: 1.1rem;
+    --navText: 1.7vw; 
+    --mediumText: 1.5vw;
+    --smallText: 1.2vw;
+}
+
+
+@media screen and (max-width: 700px) {
+    :root {
+        --navText: 2.5vw;
+        --mediumText: 2vw;
+        --smallText: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    :root {
+        --navText: 4vw;
+        --mediumText: 3vw;
+        --smallText: 1vw;
+    }
 }
 
 body {
@@ -325,6 +342,7 @@ nav>ul>li>a:hover {
     color: black;
     text-decoration: none;
     margin: 2vw;
+    padding: 12px;
 }
 
 .shoesGridCont {
@@ -536,7 +554,10 @@ nav>ul>li>a:hover {
 footer {
     margin-top: 10vh;
     background-color: #6FCF97;
-    text-align: center;
-    font-size: var(--smallText);
-    height: 20vh;
+    height: 10vh;
+}
+
+footer > p {
+    padding: 1.2vw;
+    font-size: var(--mediumText);
 }
