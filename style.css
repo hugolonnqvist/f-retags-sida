@@ -12,14 +12,16 @@ body {
 .shoeIcon {
     position: relative;
     left: 2vw;
-    width: 4vw;
-    margin: 1vw;
+    top: 1vh;
+    width: 5vw;
+    height: 5vw;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 3vh;
 }
 
 nav>ul {
@@ -27,6 +29,7 @@ nav>ul {
     flex-direction: row;
     align-items: center;
     margin-right: 2vw;
+    height: 10vh;
     border: 2px solid;
     border-radius: 20px;
     background-color: #6FCF97;
@@ -104,10 +107,10 @@ nav>ul>li>a:hover {
     animation-delay: 5s;
 }
 
-.gridContainer {
+.slideshowCont {
     display: grid;
-    grid-template-columns: 18vw 1fr 18vw 1fr 18vw;
-    grid-template-rows: 8vh 1fr;
+    grid-template-columns: 18vw 0.5vw 18vw 0.5vw 18vw;
+    grid-template-rows: 8vh 1fr 4vh;
 }
 
 .secondTitle {
@@ -115,9 +118,8 @@ nav>ul>li>a:hover {
     border-radius: 12px;
     background-color: #6FCF97;
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 7;
-    margin-bottom: 0xpx;
+    grid-column-start: 1;
+    grid-column-end: 6;
 }
 
 .secondTitle > p {
@@ -129,26 +131,46 @@ nav>ul>li>a:hover {
     margin: 0px;
 }
 
-.popShoe1, .popShoe2, .popShoe3 {
+.slideShoe1, .slideShoe2, .slideShoe3 {
     width: 17vw;
     height: 14vw;
     background-color: #f3f2f2;
     border: 8px solid  #f3f2f2;
+    grid-row-start: 2;
 }
-
-.popShoe1 {
+.slideShoe1 {
     grid-column-start: 1;
-    grid-row-start: 2;
 }
 
-.popShoe2 {
+.slideShoe2{
     grid-column-start: 3;
-    grid-row-start: 2;
 }
 
-.popShoe3 {
+.slideShoe3 {
     grid-column-start: 5;
-    grid-row-start: 2;
+}
+
+.gridContainer2 {
+    margin-top: 0vh;
+    display: grid;
+    grid-template-columns: 22vw 13vw 1fr 13vw 1fr 13vw 1fr 13vw 22vw;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+}
+
+.thirdTitle {
+    border: 2px solid;
+    border-radius: 12px;
+    background-color: #6FCF97;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.thirdTitle > p {
+    margin: 12px;
 }
 
 .item1 {
@@ -173,28 +195,6 @@ nav>ul>li>a:hover {
 .item1, .item2, .item3, .item4 {
     background-color: #f3f2f2;
     border: 8px solid  #f3f2f2;
-}
-
-.gridContainer2 {
-    display: grid;
-    grid-template-columns: 22vw 13vw 1fr 13vw 1fr 13vw 1fr 13vw 22vw;
-    grid-template-rows: auto 1fr;
-    justify-content: center;
-}
-
-.thirdTitle {
-    border: 2px solid;
-    border-radius: 12px;
-    background-color: #6FCF97;
-    text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 9;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
-.thirdTitle > p {
-    margin: 12px;
 }
 
 .oxfords1, .oxfords2, .oxfords3, .oxfords4 {
@@ -252,10 +252,149 @@ nav>ul>li>a:hover {
     to {opacity: 1;}
 }
 
+.newsGridCont {
+    display: grid;
+    grid-template-columns: 22vw 18vw 1fr 18vw 1fr 18vw 22vw;
+    grid-template-rows: 8vh 1vh 1fr 1vh 1fr;
+}
 
+.newsTextCont {
+    border: 2px solid;
+    border-radius: 12px;
+    background-color: #6FCF97;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    margin-bottom: 0px;
+}
+.newsTextCont > p {
+    margin: 12px;
+}
 
+.popShoe1, .popShoe2, .popShoe3, .popShoe4, .popShoe5, .popShoe6 {
+    width: 17vw;
+    height: 14vw;
+    background-color: #f3f2f2;
+    border: 8px solid  #f3f2f2;
+}
+
+.popShoe1 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.popShoe2 {
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+.popShoe3 {
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+
+.popShoe4 {
+    grid-column-start: 2;
+    grid-row-start: 5;
+} 
+
+.popShoe5 {
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+
+.popShoe6 {
+    grid-column-start: 6;
+    grid-row-start: 5;
+}
 
 /*skor.html*/
+
+.shoesNavCont {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.shoesNavCont > div {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+.shoesNavCont > div > a {
+    color: black;
+    text-decoration: none;
+    margin: 2vw;
+}
+
+.shoesGridCont {
+    display: grid;
+    grid-template-columns: 1fr 15vw 0.5vw 15vw 0.5vw 15vw 0.5vw 15vw 0.5vw 15vw 1fr;
+    grid-template-rows: 8vh 1vh 1fr 1vh 1fr 8vh;
+}
+
+.shoesTextCont {
+    border: 2px solid;
+    border-radius: 12px;
+    background-color: #6FCF97;
+    text-align: center;
+    margin-bottom: 0px;
+    grid-column-start: 2;
+    grid-column-end: 11;
+}
+
+.shoesTextCont > p {
+    margin: 12px;
+}
+
+.shoesGridCont > img {
+    width: 14vw;
+    height: 15vw;
+    background-color: #f3f2f2;
+    border: 8px solid  #f3f2f2;
+}
+
+.shoe1 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.shoe2 {
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+.shoe3 {
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+.shoe4 {
+    grid-column-start: 8;
+    grid-row-start: 3;
+}
+.shoe5 {
+    grid-column-start: 10;
+    grid-row-start: 3;
+}
+.shoe6 {
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+.shoe7 {
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+.shoe8 {
+    grid-column-start: 6;
+    grid-row-start: 5;
+}
+.shoe9 {
+    grid-column-start: 8;
+    grid-row-start: 5;
+}
+.shoe10 {
+    grid-column-start: 10;
+    grid-row-start: 5;
+}
+
 
 /*butiker.html*/
 .butikerGrid1 {
@@ -270,7 +409,7 @@ nav>ul>li>a:hover {
 
 .imgMap1 {
     width: 50vw;
-    height: 25vw;
+    height: 28vw;
     grid-column-start: 4;
     border: 2px solid;
     border-radius: 50px;
@@ -288,7 +427,7 @@ nav>ul>li>a:hover {
 
 .imgMap2 {
     width: 50vw;
-    height: 25vw;
+    height: 28vw;
     grid-column-start: 2;
     border: 2px solid;
     border-radius: 50px;
